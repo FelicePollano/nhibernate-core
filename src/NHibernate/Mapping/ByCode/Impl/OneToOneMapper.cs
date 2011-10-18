@@ -104,10 +104,7 @@ namespace NHibernate.Mapping.ByCode.Impl
 				_oneToOne.formula = null;
 			}
 		}
-		public void ForeignKey(string fkName)
-		{
-			this.oneToOne.foreignkey = fkName;
-		} 
+		
 
 		public void ForeignKey(string foreignKeyName)
 		{
