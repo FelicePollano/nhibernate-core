@@ -9,6 +9,6 @@ namespace NHibernate.Mapping.ByCode
 		void Constrained(bool value);
 		void PropertyReference(MemberInfo propertyInTheOtherSide);
 		void Formula(string formula);
-		void ForeignKey(string fkName);  
+		void ForeignKey(string foreignKeyName);
 	}
 }
