@@ -15,6 +15,7 @@ using NHibernate.SqlCommand;
 using NHibernate.Type;
 using NHibernate.UserTypes;
 using NHibernate.Util;
+using NHibernate.Persister;
 
 namespace NHibernate.Hql.Ast.ANTLR
 {
@@ -618,6 +619,7 @@ namespace NHibernate.Hql.Ast.ANTLR
 				if (!collectionElementType.IsEntityType)
 				{
 					throw new QueryException("collection of values in filter: this");
+                   
 				}
 
 				string collectionElementEntityName = persister.ElementPersister.EntityName;
